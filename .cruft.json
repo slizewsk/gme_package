@@ -22,7 +22,6 @@
       "_copy_without_render": [
         "docs/_templates",
         "docs/_static",
-        ".github/workflows/sub_package_update.yml"
       ],
       "_template": "https://github.com/OpenAstronomy/packaging-guide",
       "_commit": "cb394c68be7c573ddcfaeeea54757c72555eedd0"
