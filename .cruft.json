@@ -1,0 +1,32 @@
+{
+  "template": "https://github.com/OpenAstronomy/packaging-guide",
+  "commit": "cb394c68be7c573ddcfaeeea54757c72555eedd0",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "package_name": "gmepack",
+      "module_name": "gmepkg",
+      "short_description": "Galactic Mass Estimator: Fit stan models to observations of kinematics of tracers inside a potential. Can draw and generate mock observations by sampling from the distribution function of the system,.",
+      "author_name": "A. Slizewski",
+      "author_email": "a.slizewski@mail.utoronto.ca",
+      "project_url": "",
+      "license": "BSD 3-Clause",
+      "minimum_python_version": "3.10",
+      "use_compiled_extensions": "y",
+      "enable_dynamic_dev_versions": "y",
+      "include_example_code": "n",
+      "include_cruft_update_github_workflow": "y",
+      "_sphinx_theme": "alabaster",
+      "_parent_project": "",
+      "_install_requires": "",
+      "_copy_without_render": [
+        "docs/_templates",
+        "docs/_static",
+        ".github/workflows/sub_package_update.yml"
+      ],
+      "_template": "https://github.com/OpenAstronomy/packaging-guide",
+      "_commit": "cb394c68be7c573ddcfaeeea54757c72555eedd0"
+    }
+  },
+  "directory": null
+}
