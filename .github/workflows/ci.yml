@@ -1,28 +1,29 @@
-name: Run template tests
+name: Run Tests
 
 on:
-    push:
-    pull_request:
-    workflow_dispatch:
+  push:
+    branches:
+      - main  
+  pull_request:
 
 jobs:
-    test:
-        name: "Pytesting"
-        runs-on: ubuntu-latest  
-        steps:
-        - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
-          with:
-            persist-credentials: false
-            fetch-depth: 0
-        - name: "Run tests"
-          run: |
-            run: python -m pip install --upgrade tox
-            cd gmepack
-            tox -e test
+  test:
+    runs-on: ubuntu-latest
 
-    # test:
-#   test:
-#     uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@v1
-#     with:
-#       envs: |
-#         - linux: test
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.13" 
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest 
+          pip install -e . 
+
+      - name: Run tests
+        run: pytest dfsampling/tests/test_sampling.py
