@@ -26,4 +26,4 @@ jobs:
           pip install -e . 
 
       - name: Run tests
-        run: pytest dfsampling/tests/test_sampling.py
+        run: pytest df_sampling/tests/test_sampling.py
