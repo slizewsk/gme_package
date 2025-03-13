@@ -15,7 +15,7 @@
       "use_compiled_extensions": "y",
       "enable_dynamic_dev_versions": "y",
       "include_example_code": "n",
-      "include_cruft_update_github_workflow": "y",
+      "include_cruft_update_github_workflow": "n",
       "_sphinx_theme": "alabaster",
       "_parent_project": "",
       "_install_requires": "",
