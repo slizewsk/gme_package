@@ -1,9 +1,7 @@
 """Tests for `sampling` package."""
 
-from sampling.core_imports import *
-from sampling import *
-from unittest.mock import MagicMock
-import pytest 
+from df_sampling.core_imports import *
+from df_sampling import *
 
 class TestParams:   
     def setup_method(self):
