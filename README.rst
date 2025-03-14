@@ -1,5 +1,13 @@
-Galactic Mass Estimator: Fit stan models to observations of kinematics of tracers inside a potential. Can draw and generate mock observations by sampling from the distribution function of the system,.
+Galactic Mass Estimator: Fit stan models to observations of kinematics of tracers inside a potential.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Python Dependencies
+-------
+
+Main Usage
+-------
+This package currently is capable of generating samples of position and velocities of tracers within a double power-law potential, and the Hernquist potential. 
+future versions will add compatiblity with galpy. 
 
 License
 -------
